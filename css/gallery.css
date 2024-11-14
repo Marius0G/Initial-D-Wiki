@@ -2,6 +2,12 @@ body {
     background: linear-gradient(180deg, #111111, #1e1e1e);
 }
 
+main {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+
 .gridContainer{
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +16,7 @@ body {
 }
 
 .gridElement img{
-    height: 30vh;
+    height: 33vh;
     width: auto;
     transition: height 1s, width 1s, border-color 2s;
     border-width: 3px;
@@ -21,7 +27,7 @@ body {
 
 
 .gridElement img:hover{
-    height: 60vh;
+    height: 50vh;
     width: auto;
     transition: height 1s, width 1s, border-color 2s;
     border-color: purple;
