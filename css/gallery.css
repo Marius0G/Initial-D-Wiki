@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(180deg, #111111, #1e1e1e);
+}
+
+.gridContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: center;
+}
+
+.gridElement img{
+    height: 30vh;
+    width: auto;
+    transition: height 1s, width 1s, border-color 2s;
+    border-width: 3px;
+    border-color: red;
+    border-style: solid;
+}
+
+
+
+.gridElement img:hover{
+    height: 60vh;
+    width: auto;
+    transition: height 1s, width 1s, border-color 2s;
+    border-color: purple;
+}
+
+iframe{
+    height: 60vh;
+    width: 60vw;
+}
+
+@media (max-width: 768px) {
+    img{
+        height: auto;
+        width: 30vw;
+    }
+    iframe{
+        height: 40vw;
+        width: 80vw;
+    }
+    .gridElement img:active{
+        height: 60vh;
+        width: auto;
+        transition: height 1s, width 1s;
+    }
+}

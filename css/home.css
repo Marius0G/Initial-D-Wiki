@@ -1,0 +1,71 @@
+
+figcaption {
+    font-family: 'Times New Roman', serif;
+    color: rgb(199, 199, 199);
+    font-style: italic;
+}
+
+
+.flexContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3vw; /* Adds space between image and text */
+    margin-bottom: 20vh;
+}
+
+.flexImage {
+    width: 20vw;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+#vid.flexImage{
+    width: 100%; /* Ensures video uses full available width */
+    max-width: 560px; /* Maximum width for larger screens */
+}
+
+.flexText {
+    flex: 1; /* Allows the text to take up remaining space */
+}
+
+.flexText p {
+    margin-top: 3vh;
+}
+
+figcaption::before
+{
+    content: "🢁 ";
+    
+
+}
+
+#siteLink::before
+{
+    content:"🔗";
+    text-decoration: none;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+
+    .flexContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        margin-bottom: 10vh;
+    }
+
+    .flexImage {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    iframe {
+        width: 80vw;
+    }
+
+    .flexText {
+        width: 100%;
+        text-align: center;
+    }
+}
