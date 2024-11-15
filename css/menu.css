@@ -114,8 +114,6 @@
     .menu li {
         display: inline-flex;
         text-align: left;
-        padding-left: auto;
-        padding-right: auto;
     }
 
     .menu li a {
