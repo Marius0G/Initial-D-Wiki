@@ -15,19 +15,26 @@
     background: #111111;
     position: fixed;
     padding-right: 10%;
+    width: 100vw;
 }
 
+
 .menu img {
-    padding-right: 3%;
-    padding-left: 3%;
+    padding-right: 1%;
+    padding-left: 1%;
     margin-top: auto;
     margin-bottom: auto;
     padding-bottom: 0px;
     padding-top: 0px;
-    height: 5%;
-    width: 5%;
+    height: 5vh;
+    width: auto;
     position: relative;
     top: 7px;
+}
+
+.logo {
+    width: auto;
+    height: 10vh;
 }
 
 .menu li {
@@ -99,6 +106,7 @@
         display: inline-block;
         flex-direction: column; 
         position:fixed;
+        width: 100vw;
     }
 
 
@@ -106,9 +114,12 @@
         display: inline-block; 
         padding-right: 0px;
         padding-left: 0px;
-        height: 7%;
-        width: 7%;
+        height: 3vh;
+        width: auto;
         top: 0px;
+        margin-top: auto;
+        margin-bottom: auto;
+        transform:translateY(4px);
     }
 
     .menu li {
@@ -127,6 +138,10 @@
         margin-right: 5px;
     }
 
+    .menu img:hover{
+        animation: backAndForth 0.6s ease-in-out infinite alternate;
+        transform:translateY(4px);
+    }
 }
 
 header {
