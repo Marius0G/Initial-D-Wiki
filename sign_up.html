@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.1">
+
+    <meta name="description" content="A comprehensive wiki dedicated to the Initial D manga and anime, covering characters, cars, locations, and story details.">
+    <meta name="keywords" content="Initial D, wiki, manga, anime, Takumi Fujiwara, cars, drifting, street racing, Akina">
+    <meta name="author" content="Manea Marius">
+    <title>Initial D Wiki - Sign Up</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/sign_up.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <script src="scripts/sign_up.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <img class="logo" src="assets/Images/initial-d-logo.png" alt="">
+                <li>
+                    <a href="index.html">Home</a></li>
+                <li>
+                    <a href="real_life_inspiration.html">Real Life Inspiration</a>
+                    <ul class="dropdown">
+                        <li><a href="real_life_inspiration.html#Ae86">AE86 Trueno</a></li>
+                        <li><a href="real_life_inspiration.html#rx7">RX-7 FD3S</a></li>
+                        <li><a href="real_life_inspiration.html#r32">GT-R R32</a></li>
+                        <li><a href="real_life_inspiration.html#usui">Usui Pass</a></li>
+                        <li><a href="real_life_inspiration.html#eg6">Civic EG6</a></li>
+                        <li><a href="real_life_inspiration.html#night">Night racing</a></li>
+                        <li><a href="real_life_inspiration.html#s13">Silvia S13</a></li>
+                        <li><a href="real_life_inspiration.html#akina">Mount Akina</a></li>
+                        <li><a href="real_life_inspiration.html#impreza">Impreza</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="sign_up.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Sign Up</h1>
+        <div id="container">
+        <form target="_self" method="post" action="SignUp">
+        <fieldset>
+            <legend>User Data</legend>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="3" maxlength="20">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8" maxlength="20" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[*!#$%]).+$">
+                <br>
+                <small>(At least one character, one number, and one of the following special characters: *!#$%)</small>
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" maxlength="20" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[*!#$%]).+$">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <div>
+                <label for="favcar">Favourite Car:</label>
+                <select name="favcar" id="favcar">
+                    <option value="">Please choose option...</option>
+                </select>
+            </div>
+        </fieldset>
+        <input type="submit" value="Sign Up">
+        </form>
+    </div>
+    </main>
+    <footer>
+        Page made by Marius Manea. All rights reserved to Initial D franchise.
+    </footer>
+</body>
+</html>
