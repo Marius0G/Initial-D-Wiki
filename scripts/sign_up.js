@@ -16,13 +16,44 @@ const cars = [
     "Toyota Supra JZA80",
     "Suzuki Cappuccino EA11R"
   ];
+
+const characters = [
+    "Takumi Fujiwara",
+    "Bunta Fujiwara",
+    "Ryosuke Takahashi",
+    "Keisuke Takahashi",
+    "Kenji",
+    "Takeshi Nakazato",
+    "Shingo Shoji",
+    "Kyoichi Sudo",
+    "Seiji Iwaki",
+    "Toshiya Joushima (God Hand)",
+    "Kozo Hoshino (God Foot)",
+    "Wataru Akiyama"
+  ];
+
 window.onload = function() {
     let carSelect = document.getElementById("favcar");
     for(let car of cars) {
         let option = document.createElement("option");
         option.text = car;
         option.value = car.toLowerCase().replace(/ /g, "_");
-        console.log(option.value);
         carSelect.appendChild(option);
+    }
+
+    let charSelectDiv = document.getElementById("favcharacterdiv");
+    for(let char of characters) {
+        let divChar = document.createElement("div");
+        let charInput = document.createElement("input");
+        let charLabel = document.createElement("label");
+        charInput.type = "radio";
+        charInput.id = char.toLowerCase().replace(/ /g, "_");
+        charInput.name = "favcharacter";
+        charInput.value = char.toLowerCase().replace(/ /g, "_");
+        charLabel.htmlFor = char.toLowerCase().replace(/ /g, "_");
+        charLabel.textContent = char;
+        divChar.appendChild(charInput);
+        divChar.appendChild(charLabel);
+        charSelectDiv.appendChild(divChar);
     }
 }

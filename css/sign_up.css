@@ -1,0 +1,30 @@
+.inputDiv{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    margin-left: 6vw;
+}
+
+main {
+    font-size: 1.4rem;
+}
+
+#submitButton{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 10vw;
+    background-color: red;
+    border-color: black;
+    color: black;
+    text-align: center  ;
+    height: 4vh;
+    width: 10%;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    #submitButton{
+        margin-left: 0vw;
+        width: 50%;
+    }
+}

@@ -7,13 +7,13 @@
     <meta name="description" content="A comprehensive wiki dedicated to the Initial D manga and anime, covering characters, cars, locations, and story details.">
     <meta name="keywords" content="Initial D, wiki, manga, anime, Takumi Fujiwara, cars, drifting, street racing, Akina">
     <meta name="author" content="Manea Marius">
-    <title>Initial D Wiki - Sign Up</title>
+    <title>Initial D Wiki - Eurobeat</title>
     <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/sign_up.css">
+    <link rel="stylesheet" href="css/eurobeat.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
-    <script src="scripts/sign_up.js"></script>
+    <script src="scripts/eurobeat.js"></script>
 </head>
 <body>
     <header>
@@ -43,46 +43,37 @@
         </nav>
     </header>
     <main>
-        <h1>Sign Up</h1>
-        <div id="container">
-        <form target="_self" method="post" action="SignUp">
-        <fieldset>
-            <legend>User Data</legend>
-            <div class="inputDiv">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required minlength="3" maxlength="20">
+        <h1>Eurobeat - Initial D's Soundtrack</h1>
+        <h2>Eurobeat is a high-energy electronic music genre that plays a pivotal role in <i>Initial D</i>, amplifying
+        the intensity of its iconic racing scenes and defining the anime's distinct atmosphere. Originating in Europe
+        and gaining immense popularity in Japan, eurobeat is characterized by fast-paced beats, catchy melodies, and vibrant
+        vocals. Each important scene in <i>Initial D</i> is paired with a memorable eurobeat track, making it easy to associate key moments
+        with their signature songs. Hits like "Running in the 90s" and "Deja Vu" have become synonymous with the series, 
+        cementing eurobeat as an integral part of <i>Initial D’s</i> legacy and fan appeal.</h2>
+        <div class="container">
+            <div class="songsLeft">
+                <div class="song">
+                    <img src="assets/Images/playbutton.png" alt="">
+                    <div class="songDescription">
+                        <p>Running in the 90s</p>
+                        <small>AE86 Trueno vs Nissan R32</small>
+                    </div>
+                </div>
             </div>
-            <div class="inputDiv">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="video">
+                <video loop controls autoplay src="assets/Videos/running in the 90s.mp4"></video>
             </div>
-            <div class="inputDiv">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required minlength="8" maxlength="20" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[*!#$%]).+$">
-                <br>
-                <small>(At least one character, one number, and one of the following special characters: *!#$%)</small>
+            <div class="songsRight">
+                <div class="song">
+                    <img src="assets/Images/playbutton.png" alt="">
+                    <div class="songDescription">
+                        <p>Running in the 90s</p>
+                        <small>AE86 Trueno vs Nissan R32</small>
+                    </div>
+                </div>
             </div>
-            <div class="inputDiv">
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" maxlength="20" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[*!#$%]).+$">
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Preferences</legend>
-            <div class="inputDiv">
-                <label for="favcar">Favourite Car:</label>
-                <select name="favcar" id="favcar">
-                    <option value="">Please choose option...</option>
-                </select>
-            </div>
-            <div id="favcharacterdiv" class="inputDiv">
-                <label>Favourite Character:</label>
-                
-            </div>
-        </fieldset>
-        <input type="submit" value="Sign Up" id="submitButton">
-        </form>
-    </div>
+        </div>
+
     </main>
     <footer>
         Page made by Marius Manea. All rights reserved to Initial D franchise.
