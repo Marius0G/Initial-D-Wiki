@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="css/eurobeat.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
     <script src="scripts/eurobeat.js"></script>
+    <script src="scripts/dark_mode.js"></script>
+
+
 </head>
 <body>
     <header>
@@ -39,6 +42,8 @@
                 <li><a href="eurobeat.html">Eurobeat</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="sign_up.html">Sign Up</a></li>
+                <input type="button" value="Toggle Dark Mode" id="darkModeButton" onclick="toggleDarkMode()">
+
             </ul>
         </nav>
     </header>
@@ -50,6 +55,7 @@
         vocals. Each important scene in <i>Initial D</i> is paired with a memorable eurobeat track, making it easy to associate key moments
         with their signature songs. Hits like "Running in the 90s" and "Deja Vu" have become synonymous with the series, 
         cementing eurobeat as an integral part of <i>Initial D’s</i> legacy and fan appeal.</p>
+        <input type="button" value="Play Random Song" id="playRandomSong" onclick="playRandomSong()">
         <div class="container">
             <div class="songsLeft" id="songsLeftContainer">
                 

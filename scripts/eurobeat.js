@@ -117,3 +117,26 @@ window.onload = function() {
         });
     });
 }
+
+function playRandomSong() {
+    let randomButton = document.getElementById("playRandomSong");
+    randomButton.style.backgroundColor = getRandomColor();
+    randomButton.style.borderColor = getRandomBorderColor();
+    let randomIndex = Math.floor(Math.random() * scenes.length);
+    handleSongClick(randomIndex);
+}
+
+function getRandomColor() {
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    return "#" + randomColor;
+}
+
+function getRandomBorderColor(){
+    let blackorwhite = Math.floor(Math.random()*2);
+    if(blackorwhite == 0){
+        return "black";
+    } else {
+        return "white";
+    }
+
+}

@@ -1,7 +1,9 @@
 body {
     background: linear-gradient(180deg, #111111, #252525);
 }
-
+body.lightMode{
+    background: linear-gradient(180deg, #ffffff, #b0b0b0);
+}
 main {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -13,6 +15,7 @@ h1 {
     margin-top: 7vh;
     margin-bottom: 10vh;
 }
+
 
 h1::after {
     content: "頭文字イニシャルD";
@@ -41,7 +44,21 @@ footer {
     margin-top: 7vh;
 }
 
-
+#darkModeButton {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    cursor: pointer;
+}
 
 @media (max-width: 768px) {
     h1 {
@@ -53,5 +70,12 @@ footer {
     
     p {
         font-size: 1em;
+    }
+
+    #darkModeButton {
+        position: static;
+        top: 0;
+        right: 40px;
+        padding: 3px;
     }
 }
