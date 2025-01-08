@@ -116,6 +116,34 @@ window.onload = function() {
             handleSongClick(index);
         });
     });
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "ArrowLeft") {
+            let currentIndex = songDivArray.findIndex(songDiv => songDiv.classList.contains("playing"));
+            let previousIndex;
+            if (currentIndex == 0) {
+                previousIndex = songDivArray.length - 1;
+            }
+            else {
+                previousIndex = currentIndex - 1;
+            }
+        
+            handleSongClick(previousIndex);
+        }
+    });
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "ArrowRight") {
+            let currentIndex = songDivArray.findIndex(songDiv => songDiv.classList.contains("playing"));
+            let nextIndex;
+            if(currentIndex == songDivArray.length - 1){
+                nextIndex = 0;
+            }
+            else{
+                nextIndex = currentIndex + 1;
+            }
+            handleSongClick(nextIndex);
+        }
+    });
 }
 
 function playRandomSong() {
