@@ -11,7 +11,7 @@ window.addEventListener("load", function() {
     allb = document.querySelectorAll("b");
     alli = document.querySelectorAll("i");
     alllabel = document.querySelectorAll("label");
-
+    alllegend = document.querySelectorAll("legend");
     const darkModeButton = document.getElementById('darkModeButton');
     if(sessionStorage.getItem('dark-mode') === 'false') {
         document.body.classList.add('lightMode');
@@ -40,6 +40,9 @@ window.addEventListener("load", function() {
         alllabel.forEach(function(label) {
             label.style.color = "#000000";
         });
+        alllegend.forEach(function(legend) {
+            legend.style.color = "#000000";
+        });
     }
     else {
         document.body.classList.remove('lightMode');
@@ -67,6 +70,9 @@ window.addEventListener("load", function() {
         });
         alllabel.forEach(function(label) {
             label.style.color = "#FFFFFF";
+        });
+        alllegend.forEach(function(legend) {
+            legend.style.color = "#FFFFFF";
         });
     }
 });
@@ -100,6 +106,9 @@ toggleDarkMode = function() {
         alllabel.forEach(function(label) {
             label.style.color = "#000000";
         });
+        alllegend.forEach(function(legend) {
+            legend.style.color = "#000000";
+        });
     }
     else {
         sessionStorage.setItem('dark-mode', 'true');
@@ -128,6 +137,9 @@ toggleDarkMode = function() {
         });
         alllabel.forEach(function(label) {
             label.style.color = "#FFFFFF";
+        });
+        alllegend.forEach(function(legend) {
+            legend.style.color = "#FFFFFF";
         });
     }
 }
