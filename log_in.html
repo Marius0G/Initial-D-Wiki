@@ -7,7 +7,7 @@
     <meta name="description" content="A comprehensive wiki dedicated to the Initial D manga and anime, covering characters, cars, locations, and story details.">
     <meta name="keywords" content="Initial D, wiki, manga, anime, Takumi Fujiwara, cars, drifting, street racing, Akina">
     <meta name="author" content="Manea Marius">
-    <title>Initial D Wiki - Sign Up</title>
+    <title>Initial D Wiki - Log In</title>
     <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -45,53 +45,15 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="sign_up.html">Sign Up</a></li>
                 <li><a href="log_in.html" id="loginInMenuEntry"></a></li>
-
                 <input type="button" value="Toggle Dark Mode" id="darkModeButton" onclick="toggleDarkMode()">
 
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Sign Up</h1>
+        <h1>Log In</h1>
         <div id="container">
-        <form target="_self" method="post" action="SignUp">
-        <fieldset>
-            <legend>User Data</legend>
-            <div class="inputDiv">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required minlength="3" maxlength="20">
-            </div>
-            <div class="inputDiv">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="inputDiv">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required minlength="8" maxlength="20" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[*!#$%]).+$">
-                <br>
-                <small>(At least one character, one number, and one of the following special characters: *!#$%)</small>
-            </div>
-            <div class="inputDiv">
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" maxlength="20" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[*!#$%]).+$">
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Preferences</legend>
-            <div class="inputDiv">
-                <label for="favcar">Favourite Car:</label>
-                <select name="favcar" id="favcar">
-                    <option value="">Please choose option...</option>
-                </select>
-            </div>
-            <div id="favcharacterdiv" class="inputDiv">
-                <label>Favourite Character:</label>
-                
-            </div>
-        </fieldset>
-        <input type="submit" value="Sign Up" id="submitButton">
-        </form>
-    </div>
+        
     </main>
     <footer>
         Page made by Marius Manea. All rights reserved to Initial D franchise.
