@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
 });
 
 function setRandomQuote() {
-    fetch('/Initial-D-Wiki/json/quotes.json')
+    fetch('../Initial-D-Wiki/json/quotes.json')
         .then(response => response.json())
         .then(data => {
             let randomIndex = Math.floor(Math.random() * data.length);
