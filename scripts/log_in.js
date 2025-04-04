@@ -1,4 +1,4 @@
-fetch('../json/users.json')
+fetch('https://marius0g.github.io/Initial-D-Wiki/json/users.json')
         .then(response => response.json())
         .then(data => {
             users = data;
