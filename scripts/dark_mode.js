@@ -102,11 +102,14 @@ toggleDarkMode = function() {
         });
         alli.forEach(function(i) {
             i.style.color = "#000000";
+            
+
         });
         alllabel.forEach(function(label) {
             label.style.color = "#000000";
         });
         alllegend.forEach(function(legend) {
+            
             legend.style.color = "#000000";
         });
     }
